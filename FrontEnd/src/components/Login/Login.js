@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useModal } from '../../Context/ModalContext';
 import { Navigate } from 'react-router-dom';
 import Register from '../Home&Register/Register';
-import logo from '../../img/logo_hab.jpg';
 import './Login.css';
 
 function Login() {
@@ -40,7 +39,6 @@ function Login() {
     <aside className='log-contain'>
       <h2>Login</h2>
       <form id='login' onSubmit={handleSubmit}>
-        <img className='logo' src={logo} alt='logo' />
         <label>
           <input
             placeholder='Username'

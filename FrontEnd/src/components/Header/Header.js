@@ -8,7 +8,6 @@ import './Header.css'
 function Header() {
     const [token, setToken] = useToken()
     const [, setModal] = useModal()
-   
     
   return (
     <header id="top-bar" onSubmit={e => e.preventDefault()}>

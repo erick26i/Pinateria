@@ -5,7 +5,6 @@ import { useToken } from '../../Context/TokenContext';
 import { useUser } from '../../Context/UserContext';
 import Login from '../Login/Login';
 import './Register.css';
-import logo from '../../img/logo_hab.jpg';
 
 function Register() {
   const [username, setUser] = useUser('');
@@ -52,7 +51,6 @@ function Register() {
     <section className='reg-contain'>
       <h2>Register</h2>
       <form id='register' onSubmit={handleSubmit}>
-        <img className='logo' src={logo} alt='logo' />
         <label>
           <span className='label'>Username</span>
           <input
